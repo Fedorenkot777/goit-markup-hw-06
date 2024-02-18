@@ -144,13 +144,13 @@ button {
  .hero {
     background-color: #2E2F42;
     /*padding: 188px 0;*/
-     background-image:
+     /*background-image:
      linear-gradient(rgba(46, 47, 66, 0.7),
      rgba(46,47,66,0.7 )
      ),
-     url(../images/people-office.jpg);
+     url(../images/people-office-pl.jpg);*/
      height: 600px;
-     max-width: 1440px;
+     /*max-width: 1440px;*/
      margin-left: auto;
      margin-right: auto;
      background-repeat: no-repeat;
@@ -542,7 +542,7 @@ button {
  }
 
  .subscribe-input {
-   width: 264px;
+   /*width: 264px;*/
    height: 40px;
    font-size: 12px;
    font-style: normal;
@@ -620,13 +620,13 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%)scale(1);
-  width: 408px;
-  min-height: 584px;
+  /*width: 408px;*/
+  /*min-height: 584px;*/
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+  /*padding: 72px 24px 24px 24px;*/
 }
 
 .backdrop.is-open {
@@ -831,35 +831,141 @@ button {
    padding: 0;
  }
 
+ .logo-pa {
+   display: flex;
+   gap: 40px;
+}
+
+.logo-li {
+   color: #404BBF;
+  position: relative;
+}
+
+.logo-list.current {
+   color: #404BBF;
+   position: relative;
+}
+
+.logo-list.current::after {
+  content: '';
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  position: relative;
+  display: block;
+  position: absolute;
+  color: #404BBF;
+}
+
+.contacts-ul {
+    display: flex;
+    gap: 40px;*/
+  }
+ 
+.contacts-list{
+    color: #434455;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 24px 0;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ 
+.contacts-list:hover,
+  .contacts-list:focus,
+  .logo-list:hover,
+  .logo-list:focus {
+     color: #404bbf;
+   }
+
+.hero {
+      background-color: #2E2F42;
+       background-image:
+       linear-gradient(rgba(46, 47, 66, 0.7),
+       rgba(46,47,66,0.7 )
+       ),
+       url(../images/people-office-pl.jpg);
+      }
+
+.hero{
+         padding-top: 112px;
+         padding-bottom: 112px;
+       }
+
+.hero-title { 
+         font-size: 56px;*
+         line-height: 1.07;
+         max-width: 496px;
+    }
+
+.hero-container{ 
+      gap: 36px;
+     }
+.features-list{
+      gap: 24px;
+     }
+   
+.features-item {
+      width: calc((100% - 24px) / 2);
+      width: 100%;
+   }
 
 .team-headd-cards{
-   gap: 48px;
+   gap: 40px;
  }
+
+.team-list-li {
+   width: calc((100% - 36px) / 2);
+ }
+.our-team-li {
+   width: calc((100% - 24px) / 2); 
+ }
+
 .team-headd{
    font-size: 36px;
    line-height: 1.11; 
 }
 
-.portfolio {
-   padding-top: 48px;
-   padding-bottom: 48px;
+.subscribe-label{
+   width: auto;
 }
 
-.team-list-li {
-   width: calc((100% - 36px) / 2);
+.subscribe-input{
+   width: 264px;
+}
+
+.footer-container{
+   flex-wrap: wrap;
+   flex-direction: row;
+   padding: 0 108px;
+}
+
+.subscribe-form {
+   display: flex;
+   gap: 24px;
  }
- .features {
-   padding-top: 58px;
-   padding-bottom: 58px;
+
+.footer-text {
+   max-width: 264px;
 }
 
-.features-list {
-      gap: 24px;
-  }
-.features-item {
-   width: calc((100% - 24px) / 2);
-   width: 100%;
+.modal {
+   width: 408px;
+   min-height: 584px;
+   padding: 72px 24px 24px 24px;
 }
+
+.header-panakota{
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+}
+
  }
 
  @media (min-width: 1158px) {
@@ -867,8 +973,25 @@ button {
       width: 1158px;
 } 
 
-.portfolio {
-  padding: 120px 0;
+.logo{
+  margin-right: 76px;
+} 
+
+.contacts-ul {
+    gap: 40px;
+  }
+
+.contacts-list{
+   font-size: 16px;
+}
+
+.features-list {
+   gap: 24px;
+}
+
+.features-item {
+width: calc((100% - 72px) / 4);
+width: 100%;
 }
 
 .team-list-li {
@@ -879,17 +1002,94 @@ button {
    column-gap: 24px;
  }
 
- .features {
-   padding-top: 68px;
-   padding-bottom: 68px;
+.portfolio {
+   padding: 120px 0;
+ }
+ .hero {
+   background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46,47,66,0.7 )
+    ),
+    url(../images/people-office-pl.jpg);
+    max-width: 1440px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office-pl-2x.jpg");
+}
+.hero {
+   padding-top: 188px;
+   padding-bottom: 188px;
 }
 
 .features-list {
-      gap: 24px;
+   gap: 24px;
   }
 
-.features-item {
+  .features-item{
    width: calc((100% - 72px) / 4);
-   width: 100%;
+}
+
+.features-sabtitle {
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.features-div{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 112px;
+   background-color: #f4f4fd;
+   border-radius: 4px;
+   margin-bottom: 8px;
+   border: 1px solid #8E8F99;
+   margin: 0 auto;
+}
+
+.our-team {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+
+.our-team-li {
+  width: calc((100% - 72px) / 4); 
+ 
+} 
+
+.portfolio {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+
+.team-headd-cards{
+   row-gap: 48px;
+ }
+
+ .team-list-li {
+  width: calc((100% - 48px) / 3);
+}
+
+.footer-container{
+  align-items: baseline;
+}
+
+.footer-text {
+   max-width: 264px;
+}
+
+.footer {
+   padding: 100px 0;
+}
+
+.footer-container{
+   padding: 0 15px;
 }
 }
