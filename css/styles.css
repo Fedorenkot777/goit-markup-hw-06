@@ -42,18 +42,19 @@ img {
    align-items: center;
    background-color: #FFFFFF;
  }
+
   .logo {
-     color: #4D5AE5;
-     font-size: 18px;
-     font-weight: 700;
-     line-height: 1.17; 
-     letter-spacing: 0.03em;
-     text-transform: uppercase;
-     font-family: "Raleway", sans-serif;
-     margin-right: 76px;
-     padding: 24px 0;
-     display: flex;
-     text-decoration: none;
+   color: #4D5AE5;
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 1.17; 
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   font-family: "Raleway", sans-serif;
+   margin-right: 76px;
+   padding: 24px 0;
+   display: flex;
+   text-decoration: none;
 }
 
  .logo-accent {
@@ -350,11 +351,11 @@ img {
  }
 
 .team-headd-cards{
-  column-gap: 24px;
-  list-style-type: none;
-  flex-wrap: wrap;
-  row-gap: 48px;
-  display: flex;
+   column-gap: 24px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    display: flex;
 }
 
 .team-list-li {
