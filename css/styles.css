@@ -21,16 +21,12 @@ img {
  }
 
 .container {
-      /* max-width: 1158px; */
+      /*max-width: 1158px;*/
       width: 320px;
       padding-left: 16px;
       padding-right: 16px;
       margin: 0 auto;
 }
-
-.header{
-   border-bottom: 1px solid #E7E9FC;
-   }
 
    .logo {
       color: #4D5AE5;
@@ -44,10 +40,6 @@ img {
 
  }
 
- .logo-container{
-   display: flex;
-   align-items: center; 
-}
 
 button {
     cursor: pointer;
@@ -63,16 +55,27 @@ button {
   }
 
   .logo-container{
-   /*display: flex;
-   align-items: center;*/ 
+   width: 1158px;
+   padding: 0 15px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
  }
 
   .logo-nav{
-   /*display: flex;
-   align-items: center;*/
+   display: flex;
+   align-items: center;
    background-color: #FFFFFF;
  }
-  /*.logo {
+
+ .logo-pa {
+   display: flex;
+   gap: 40px;
+   padding: 0;
+}
+
+
+  .logo {
      color: #4D5AE5;
      font-size: 18px;
      font-weight: 700;
@@ -80,24 +83,18 @@ button {
      letter-spacing: 0.03em;
      text-transform: uppercase;
      font-family: "Raleway", sans-serif;
-     /*margin-right: 76px;*/
-     /*padding: 18px 0;
+     margin-right: 76px;
+     padding: 18px 0;
      display: flex;
-     text-decoration: none;*/
+     text-decoration: none;
 }
 
  .logo-accent {
     color: #2e2f42;
 }
 
-.logo-pa {
-   /*display: flex;*/
-   /*gap: 40px;*/
-   padding: 0;
-   align-items: center;
-}
 
-/*.logo-li {
+.logo-li {
    color: #404BBF;
   position: relative;
 }
@@ -119,9 +116,9 @@ button {
   display: block;
   position: absolute;
   color: #404BBF;
-}*/
+}
 
- /*.logo-list {
+ .logo-list {
     font-size: 16px;
     line-height: 1.5;
     color: #2e2f42;
@@ -131,12 +128,13 @@ button {
     padding: 24px 0;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}*/
+}
 
   /* Address */
  .contacts {
     font-style: normal;
-    margin-left: auto;
+    margin: 0;
+    padding: 24px 0;
  }
 
 .contacts-ul {
@@ -144,7 +142,7 @@ button {
    gap: 40px;*/
  }
 
- /*.contacts-list{
+ .contacts-list{
    color: #434455;
    text-decoration: none;
    font-size: 16px;
@@ -153,26 +151,26 @@ button {
    padding: 24px 0;
    display: block;
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}*/
+}
 
- /*.contacts-list:hover,
+ .contacts-list:hover,
  .contacts-list:focus,
  .logo-list:hover,
  .logo-list:focus {
     color: #404bbf;
-  }*/
+  }
   
  /* Hero img */
  .hero {
     background-color: #2E2F42;
-    /*padding: 188px 0;*/
-     /*background-image:
+    padding: 188px 0;
+    background-image:
      linear-gradient(rgba(46, 47, 66, 0.7),
      rgba(46,47,66,0.7 )
      ),
      url(../images/people-office-pl.jpg);*/
      height: 600px;
-     /*max-width: 1440px;*/
+     max-width: 1440px;
      margin-left: auto;
      margin-right: auto;
      background-repeat: no-repeat;
@@ -184,13 +182,13 @@ button {
  .hero-title {
      color:#FFF;
      text-align: center;
-     /*font-size: 56px;*/
+     font-size: 56px;
      font-weight: 700;
-     /*line-height: 1.07;*/ 
+     line-height: 1.07; 
      letter-spacing: 0.02em;
      text-transform: capitalize;
      margin:0 auto;
-     /*max-width: 496px;*/
+     max-width: 496px;
      margin-bottom: 48px;
 }
 
@@ -219,9 +217,7 @@ button {
 
 /* Features */
 .features {
-   background-color: #FFF;
-   padding-left: 96px;
-   padding-bottom: 96px;
+   padding: 120px 0;
 }
 
 .visually-hidden{
@@ -239,14 +235,11 @@ button {
 
 .features-list {
  display: flex;
- flex-wrap: wrap;
- /*gap: 24px;*/
- list-style-type: none;
+ gap: 24px;
 }
 
 .features-item{
-   /*width: calc((100% - 72px) / 4);*/
-   width: 100%;
+   width: calc((100% - 72px) / 4);
 }
 
 .features-item-text{
@@ -270,21 +263,13 @@ button {
 }
 
 .features-sabtitle {
-    color: #2e2f42;
-    /*font-size: 20px;
-    font-weight: 500;*/
-    line-height: 1.2;
-    letter-spacing: 0.02em;
     margin-bottom: 8px;
-
 }
 
 /* Our-team */
 .our-team {
    background-color: #F4F4FD; 
-   /*padding: 120px 0;*/
-   padding-top: 96px;
-   padding-bottom: 96px;
+   padding: 120px 0;
 }
 
 .our-team-title {
@@ -301,17 +286,15 @@ button {
 
  .team-list-ul {
    display: flex;
-   flex-wrap: wrap;
-   gap: 72px;
-   list-style-type: none;
+   gap: 24px;
  }
 
 .our-team-li {
    background-color: #FFFFFF;
-  /* width: calc((100% - 72px) / 4);*/ 
+   width: calc((100% - 72px) / 4);
    border-radius: 0 0 4px 4px;
    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-   width: 100%;
+   
 } 
 
 .our-team-cards {
@@ -374,34 +357,30 @@ button {
 
 /* Portfolio */
 .portfolio {
-    /*padding: 120px 0;*/
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding: 120px 0;
 }
 
 .team-headd{
   margin-bottom: 72px;
-  /*font-size: 36px;*/
+  font-size: 36px;
   color: #2E2F42;
   text-align: center;
   font-weight: 700;
-  /*line-height: 1.11;*/ 
+  line-height: 1.11; 
   letter-spacing: 0.02em;
   text-transform: capitalize;
  }
 
 .team-headd-cards{
-  /*column-gap: 24px;*/
-  list-style-type: none;
+  column-gap: 24px;
   flex-wrap: wrap;
-  /*row-gap: 48px;*/
+  row-gap: 48px;
   display: flex;
-  row-gap: 24px;
 }
 
 .team-list-li {
    color: #2E2F42;
-   /*width: calc((100% - 48px) / 3);*/
+   width: calc((100% - 48px) / 3);
    box-sizing: border-box;
    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
    width: 100%;
@@ -458,6 +437,12 @@ button {
    letter-spacing: 0.02em;
 }
 
+.port-img{
+   display: block;
+   font-size: 16px;
+   max-width: 100%;
+}
+
 .team-list-li:hover .port-live-p {
    transform: translateY(0%);
 }
@@ -465,13 +450,15 @@ button {
 /*  Footer */
  .footer {
    background-color: #2E2F42;
-   /*padding: 100px 0;*/
-   padding: 96px 0;
+   padding: 100px 0;
 }
 
 .footer-container{
   align-items: baseline;
   display: flex;
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .footer-logo{
@@ -501,7 +488,7 @@ button {
    font-weight: 400;
    line-height: 1.5; 
    letter-spacing: 0.02em;
-   /*max-width: 264px;*/
+   max-width: 264px;
    max-width: 100%;
 }
 
@@ -564,7 +551,7 @@ button {
  }
 
  .subscribe-input {
-   /*width: 264px;*/
+   width: 264px;
    height: 40px;
    font-size: 12px;
    font-style: normal;
@@ -639,6 +626,7 @@ button {
 
 .modal{
   position: absolute;
+  opacity: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%)scale(1);
@@ -770,10 +758,6 @@ button {
 }
 
 .checkbox-div{
-   margin-bottom: 24px;
-}
-
-.checkbox {
    margin-bottom: 24px;
 }
 
