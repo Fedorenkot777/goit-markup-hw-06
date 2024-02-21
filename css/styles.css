@@ -733,9 +733,6 @@ img {
    margin-bottom: 24px;
 }
 
-.visually-hidden {
-}
-
 .checkbox-label {
    font-size: 12px;
   line-height: 1.17;
@@ -764,7 +761,6 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  
 }
 
 .privacy-policy {
