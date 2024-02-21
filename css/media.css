@@ -759,7 +759,7 @@ justify-content: center;
     margin-bottom: 16px;
   }
 
- {
+  .subscribe-form  {
   display: flex;
   flex-direction: column;
   gap: 24px;
