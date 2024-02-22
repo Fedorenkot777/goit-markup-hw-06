@@ -1195,7 +1195,7 @@ display: block;
 opacity: 1;
 visibility: visible;
 }
-.mobile.is-open .mobile-div {
+.mobile.mobile-div {
   opacity: 1;
   }
 
