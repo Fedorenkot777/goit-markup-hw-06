@@ -1154,7 +1154,7 @@ align-items: center;
 
 /*mobile*/
 .mobile-close-button {
-  position: absolute;
+position: absolute;
 top:24px;
 right: 24px;
 width: 24px;
@@ -1202,6 +1202,7 @@ flex-direction: column;
 background-color: #ffffff;
 padding: 72px 16px 40px 16px;
 }
+
 .mobile-ul {
 display: flex;
 flex-direction: column;
@@ -1217,7 +1218,7 @@ color: #404BBF;
 font-size: 36px;
 font-style: normal;
 font-weight: 700;
-line-height: 1.11; /* 111.111% */
+line-height: 1.11; 
 letter-spacing: 0.02em;
 color: #2E2F42;
 text-decoration: none;
@@ -1245,8 +1246,8 @@ color: #434455;
 text-decoration: none;
 }
 
-.mobile-cont :focus,
-.mobile-cont :hover {
+.mobile-cont:focus,
+.mobile-cont:hover {
 color: #404BBF;
 }
 
@@ -1263,6 +1264,7 @@ gap: 40px;
 width: 40px;
 height: 40px;
 }
+
 @media screen and (min-width: 768px) {
 .mobile {
   display: none;
