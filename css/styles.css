@@ -682,7 +682,7 @@ img {
    border-color: #4D5AE5;
 }
 
-.modal-input + .modal-label-icon{
+.modal-input:focus + .modal-label-icon{
    fill: #4D5AE5;
 }
 
@@ -747,7 +747,8 @@ img {
  }
 
 .checkbox-span {
-   width: 16px;
+  flex-shrink: 0;
+  width: 16px;
   height: 16px;
   margin-right: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
